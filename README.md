@@ -1,4 +1,4 @@
-# Tonic-Userbot Telegram
+# Fahri-Userbot Telegram
 
 </p>
 <p align="center">
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/33193e0075fc37c000379.jpg">
+  <img src="https://telegra.ph/file/02e0ce30552175837c554.jpg">
 </p>
 
 ## <p align="center">DEPLOY TO WEB HEROKU</p>
