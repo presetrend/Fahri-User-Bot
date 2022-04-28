@@ -169,7 +169,7 @@ def command(**args):
                 return
 
             if groups_only and not check.is_group:
-                await check.respond("`I don't think this is a group.`")
+                await check.respond("`Saya tidak berpikir ini adalah Grup.`")
                 return
 
         if allow_edited_updates:
@@ -230,7 +230,7 @@ def register(**args):
                 return
 
             if groups_only and not check.is_group:
-                await check.respond("`I don't think this is a group.`")
+                await check.respond("`Saya tidak berpikir ini adalah grup.`")
                 return
 
             if check.via_bot_id and not insecure and check.out:
@@ -252,23 +252,23 @@ def register(**args):
                 if not disable_errors:
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
-                    text = "**Tonic-Project ERROR**\n"
-                    link = "Silahkan chat: @Bukan_guudlooking"
+                    text = "**Fahri-Project ERROR**\n"
+                    link = "Silahkan chat: @presetrend"
                     text += "Untuk melaporkan kesalahan"
                     text += f"tinggal teruskan pesan ini {link}.\n"
-                    text += "Sendi Siap Membantu Kamu\n"
+                    text += "Saya Siap Membantu Kamu\n"
 
                     ftext = "========== DISCLAIMER =========="
-                    ftext += "\nThis file uploaded ONLY here,"
-                    ftext += "\nwe logged only fact of error and date,"
-                    ftext += "\nwe respect your privacy,"
-                    ftext += "\nyou may not report this error if you've"
-                    ftext += "\nany confidential data here, no one will see your data\n"
+                    ftext += "\nFile ini hanya diunggah di sini,"
+                    ftext += "\nkami mencatat hanya fakta kesalahan dan tanggal,"
+                    ftext += "\nKami menghormati privasi Anda,"
+                    ftext += "\nAnda mungkin tidak melaporkan kesalahan ini jika Anda sudah"
+                    ftext += "\ndata rahasia apa pun di sini, tidak ada yang akan melihat data Anda\n"
                     ftext += "================================\n\n"
-                    ftext += "--------BEGIN USERBOT TRACEBACK LOG--------\n"
-                    ftext += "\nDate: " + date
+                    ftext += "--------MULAI LOG TRACEBACK USERBOT--------\n"
+                    ftext += "\nTanggal: " + date
                     ftext += "\nChat ID: " + str(check.chat_id)
-                    ftext += "\nSender ID: " + str(check.sender_id)
+                    ftext += "\nID Pengirim: " + str(check.sender_id)
                     ftext += "\n\nEvent Trigger:\n"
                     ftext += str(check.text)
                     ftext += "\n\nTraceback info:\n"
