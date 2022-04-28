@@ -57,14 +57,14 @@ async def autobot():
         return
     await bot.start()
     await bot.send_message(
-        BOTLOG_CHATID, "➕ **SEDANG MEMBUAT BOT TELEGRAM UNTUK ANDA DI @BotFather**"
+        BOTLOG_CHATID, "✨ **SEDANG MEMBUAT BOT TELEGRAM UNTUK ANDA DI @BotFather**"
     )
     who = await bot.get_me()
     name = who.first_name + " Assistant Bot"
     if who.username:
         username = who.username + "_ubot"
     else:
-        username = "tonibot" + (str(who.id))[5:] + "ubot"
+        username = "fahribot" + (str(who.id))[5:] + "ubot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
@@ -126,7 +126,7 @@ async def autobot():
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @PrimeSupportGroup ✨"
+                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @Presetrend ✨"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
@@ -146,7 +146,7 @@ async def autobot():
                              anonymous=False,
                              manage_call=True,
                          )
-            await bot(EditAdminRequest(int(BOTLOG_CHATID), f"@{username}", rights, "ᴀssɪsᴛᴀɴᴛ"))
+            await bot(EditAdminRequest(int(BOTLOG_CHATID), f"@{username}", rights, "Assistant"))
             toni = "userbot/resource/extras/Tonic.jpg"
             await bot(EditPhotoRequest(BOTLOG_CHATID, await bot.upload_file(toni)))
             heroku_var["BOT_TOKEN"] = token
@@ -181,7 +181,7 @@ async def autobot():
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @PrimeSupportGroup ✨"
+            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @Presetrend ✨"
         )
         await bot.send_message(
             BOTLOG_CHATID,
@@ -253,8 +253,8 @@ async def autopilot():
     try:
         r = await bot(
             CreateChannelRequest(
-                title="ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ʟᴏɢs",
-                about="ᴍʏ ᴛᴏɴɪᴄ ʟᴏɢs ɢʀᴏᴜᴘ\n\n Join @PrimeSupportGroup",
+                title="𝗙𝗮𝗵𝗿𝗶 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 LOG",
+                about="FAHRI USERBOT LOG\n\n Join @Presetrend",
                 megagroup=True,
             ),
         )
