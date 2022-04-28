@@ -106,7 +106,7 @@ if CONFIG_CHECK:
     )
     sys.exit(1)
     
-# KALO NGEFORK/CLONE ID DEVS NYA GA USAH DI HAPUS YA KONTOLLLL 😡
+# KALO NGEFORK/CLONE ID DEVS NYA GA USAH DI HAPUS YA
 DEVS = (
     1663258664,
     1416529201,
@@ -119,7 +119,7 @@ DEVS = (
     1902637136, # Gip Alok
 )
 
-# Blacklist User for use Tonic-Userbot
+# Blacklist User for use Fahri-Userbot
 while 0 < 6:
     _BLACKLIST = get(
         "https://raw.githubusercontent.com/Tonic990/blacklist/master/toniblacklist.json"
@@ -183,9 +183,9 @@ LYDIA_API_KEY = os.environ.get(
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Toni880/Tonic-Userbot")
+    "https://github.com/presetrend/musicbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Tonic-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Fahri-UserBot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -229,11 +229,11 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # Youtube API key
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg")
 
-# Untuk Perintah .tonialive
-TONIC_TEKS_KUSTOM = os.environ.get("TONIC_TEKS_KUSTOM") or "**Hi I'am Alive...**"
+# Untuk Perintah .fahrialive
+TONIC_TEKS_KUSTOM = os.environ.get("FAHRI_TEKS_KUSTOM") or "**Hai, aku masih hidup...**"
 
 # Custom icon HELP
-ICON_HELP = os.environ.get("ICON_HELP", "❉")
+ICON_HELP = os.environ.get("ICON_HELP", "✨")
 
 # Default .alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -252,7 +252,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Tonic-Userboot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Fahri-UserBot")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "5.0")
@@ -261,7 +261,7 @@ BOT_VER = os.environ.get("BOT_VER", "5.0")
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 
 # Sticker Custom Pack Name
-S_PACK_NAME = os.environ.get("S_PACK_NAME") or "Tonic-Userbot"
+S_PACK_NAME = os.environ.get("S_PACK_NAME") or "presetrend"
 
 # Cmd Handler Costum
 CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
@@ -269,19 +269,19 @@ CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
 SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 
 # Support
-GROUP = os.environ.get("GROUP", "PrimeSupportGroup")
-CHANNEL = os.environ.get("CHANNEL", "PrimeSupportChannel")
+GROUP = os.environ.get("GROUP", "presetrend")
+CHANNEL = os.environ.get("CHANNEL", "presetrend")
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/33193e0075fc37c000379.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/02e0ce30552175837c554.jpg"
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
-    "INLINE_PIC") or "https://telegra.ph/file/33193e0075fc37c000379.jpg"
+    "INLINE_PIC") or "https://telegra.ph/file/02e0ce30552175837c554.jpg"
 
 PMPERMIT_PIC = os.environ.get(
-    "PMPERMIT_PIC") or "https://telegra.ph/file/33193e0075fc37c000379.jpg"
+    "PMPERMIT_PIC") or "https://telegra.ph/file/02e0ce30552175837c554.jpg"
 PM_LIMIT = int(os.environ.get("PM_LIMIT", 4))
 
 # Default emoji help
@@ -291,7 +291,7 @@ DEFAULT = list(map(int, b64decode("MTQxNjUyOTIwMQ==").split()))
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "Tonic-Userbot"
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "Fahri-Userbot"
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
@@ -358,7 +358,7 @@ for binary, path in binaries.items():
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
 else:
-    session = "Tonic-userbot"
+    session = "Fahri-userbot"
 try:
     bot = TelegramClient(
         session=session,
@@ -388,7 +388,7 @@ async def checking():
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**Tonic-Userbot v{BOT_VER} is back up and running!**\n\n"
+        f"**Fahri-Userbot v{BOT_VER} Kembali dan berjalan!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {owner}"
@@ -456,13 +456,13 @@ def paginate_help(page_number, loaded_modules, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "⪻", data="{}_prev({})".format(prefix, modulo_page)
+                    "⇦", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "ʙᴀᴄᴋ", data="{}_close({})".format(prefix, modulo_page)
+                    "kembali", data="{}_close({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "⪼", data="{}_next({})".format(prefix, modulo_page)
+                    "⇨", data="{}_next({})".format(prefix, modulo_page)
                 ),
             )
         ]
@@ -501,13 +501,13 @@ with bot:
 
         main_help_button = [
             [
-                Button.inline("ᴍᴏᴅᴜʟᴇs 📚", data="reopen"),
-                Button.inline("ᴠᴄ ᴍᴇɴᴜ 📎", data="toni_inline"),
+                Button.inline("MODULE 📚", data="reopen"),
+                Button.inline("MENU VOICE CHAT 📂", data="toni_inline"),
             ],
             [
-                Button.url("sᴇᴛᴛɪɴɢs ⚙️", f"t.me/{botusername}"),
+                Button.url("SETELAN ⚙️", f"t.me/{botusername}"),
             ],
-            [Button.inline("ʙᴀᴄᴋ", data="close")],
+            [Button.inline("KEMBALI", data="close")],
         ]
         
         USER_BOT_NO_WARN = (
@@ -594,7 +594,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**✨ ᴛᴏɴɪᴄ-υѕєявσт ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✣ **ᴏᴡɴᴇʀ** [{user.first_name}](tg://user?id={user.id})\n✣ **ᴊᴜᴍʟᴀʜ** `{len(dugmeler)}` **Modules**"
+                text = f"**✨ 𝗙𝗮𝗵𝗿𝗶 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 INLINE MENU ✨**\n\n✎ **PEMILIK** [{user.first_name}](tg://user?id={user.id})\n✎ **JUMLAH** `{len(dugmeler)}` **Module**"
                 await event.edit(
                     text,
                     file=tonilogo,
@@ -610,12 +610,12 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@PrimeSupportGroup"):
+            if event.query.user_id == uid and query.startswith("@presetrend"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = await event.builder.photo(
                     file=tonilogo,
                     link_preview=False,
-                    text=f"**✨ ᴛᴏɴɪᴄ-υѕєявσт ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✣ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✣ **ᴊᴜᴍʟᴀʜ** `{len(dugmeler)}` **Modules**",
+                    text=f"**✨ 𝗙𝗮𝗵𝗿𝗶 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 INLINE MENU ✨**\n\n✎ **PEMILIK :** [{user.first_name}](tg://user?id={user.id})\n✎ **JUMLAH** `{len(dugmeler)}` **Modules**",
                     buttons=main_help_button,
                 )
             elif query.startswith("pmpermit"):
@@ -626,29 +626,29 @@ with bot:
                     buttons=[
                         [
                             Button.inline("• Untuk Chat •", data="chat"),
-                            Button.inline("• Untuk Spam •", data="heheboi"),
+                            Button.inline("• Untuk Iseng •", data="heheboi"),
                         ],
                     ],
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Tonic - Userbot",
-                    url="https://t.me/PrimeSupportGroup",
+                    description="Repository Fahri - Userbot",
+                    url="https://t.me/presetrend",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text="**Tonic-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **ᴏᴡɴᴇʀ ʀᴇᴘᴏ :** [ৡৢ͡𝙳𝙱 𝙏𝙊𝙉𝙄-𝙀𝙓 [🇮🇩]](https://t.me/Bukan_guudlooking)\n✣ **sᴜᴘᴘᴏʀᴛ :** @PrimeSupportGroup\n✣ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Tonic-Userbot](https://github.com/Toni880/Tonic-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Fahri-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✎ **PEMILIK REPO :** [𝗙𝗮𝗵𝗿𝗶 [ID]](https://t.me/arfahri)\n✎ **SUPPORT :** @presetrend\n✎ **Channel Youtube :** [Presetrend](https://youtube.com/c/Presetrend)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
-                                "ɢʀᴏᴜᴘ",
-                                "https://t.me/PrimeSupportGroup"),
+                                "Channel",
+                                "https://t.me/presetrend"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ",
-                                "https://github.com/Toni880/Tonic-Userbot"),
+                                "Youtube",
+                                "https://youtube.com/c/Presetrend"),
                         ],
                     ],
                     link_preview=False,
@@ -687,9 +687,9 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ ᴛᴏɴɪᴄ-υѕєявσт ✨",
-                    description="Toni - Userbot | Telethon",
-                    url="https://t.me/PrimeSupportGroup",
+                    title="✨ 𝗙𝗮𝗵𝗿𝗶 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 ✨",
+                    description="Fahri - Userbot | Telethon",
+                    url="https://t.me/Presetrend",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
@@ -752,7 +752,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Kyy-Userbot
                 # https://t.me/TelethonChat/115200
                 text = (
-                    f"**✨ ᴛᴏɴɪᴄ-υѕєявσт ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✣ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✣ **ᴊᴜᴍʟᴀʜ** `{len(dugmeler)}` **Modules**")
+                    f"**✨ 𝗙𝗮𝗵𝗿𝗶 𝘂𝘀𝗲𝗿𝗯𝗼𝘁 INLINE MENU ✨**\n\n✎ **PEMILIK :** [{user.first_name}](tg://user?id={user.id})\n✎ **JUMLAH** `{len(dugmeler)}` **Module**")
                 await event.edit(
                     text,
                     file=tonilogo,
@@ -767,12 +767,12 @@ Voice chat group menu untuk {owner}
 """,
                                  buttons=[
                                      [
-                                         Button.inline("ᴠᴄ ᴘʟᴜɢɪɴ ⚙️",
+                                         Button.inline("PLUGIN VOICE CHAT ⚙️",
                                                        data="vcplugin"),
-                                         Button.inline("ᴠᴄ ᴛᴏᴏʟs ⚙️",
+                                         Button.inline("ALAT VOICE CHAT ⚙️",
                                                        data="vctools")],
                                      [custom.Button.inline(
-                                         "ʙᴀᴄᴋ", data="gcback")],
+                                         "KEMBALI", data="gcback")],
                                  ]
                                  )
             else:
@@ -810,7 +810,7 @@ Voice chat group menu untuk {owner}
                     text,
                     file=tonilogo,
                     link_preview=True,
-                    buttons=[Button.inline("ʙᴀᴄᴋ", data="toni_inline")])
+                    buttons=[Button.inline("KEMBALI", data="toni_inline")])
             else:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
@@ -842,7 +842,7 @@ Voice chat group menu untuk {owner}
                     text,
                     file=tonilogo,
                     link_preview=True,
-                    buttons=[Button.inline("ʙᴀᴄᴋ", data="toni_inline")])
+                    buttons=[Button.inline("KEMBALI", data="toni_inline")])
             else:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
@@ -850,9 +850,9 @@ Voice chat group menu untuk {owner}
         @tgbot.on(events.CallbackQuery(data=b"close"))
         async def close(event):
             buttons = [
-                (custom.Button.inline("ᴍᴀɪɴ ᴍᴇɴᴜ", data="gcback"),),
+                (custom.Button.inline("MAIN MENU", data="gcback"),),
             ]
-            await event.edit("**ᴍᴇɴᴜ ᴅɪᴛᴜᴛᴜᴘ!**", file=tonilogo, buttons=buttons)
+            await event.edit("**MENU DITUTUP!**", file=tonilogo, buttons=buttons)
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(
@@ -898,7 +898,7 @@ Voice chat group menu untuk {owner}
                     )
                 )
                 await event.edit(
-                    reply_pop_up_alert, buttons=[Button.inline("ʙᴀᴄᴋ", data="reopen")]
+                    reply_pop_up_alert, buttons=[Button.inline("KEMBALI", data="reopen")]
                 )
 
             else:
@@ -912,7 +912,7 @@ Voice chat group menu untuk {owner}
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
             else:
                 await event.edit(
-                    f"Ini adalah Keamanan PM untuk {ALIVE_NAME} untuk menjauhkan spammer.\n\nDilindungi oleh [Userbot](t.me/PrimeSupportGroup)"
+                    f"Ini adalah Keamanan PM untuk {ALIVE_NAME} untuk menjauhkan spammer.\n\nDilindungi oleh [Userbot](t.me/Presetrend)"
                 )
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"req")))
         async def on_pm_click(event):
@@ -939,7 +939,7 @@ Voice chat group menu untuk {owner}
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
             else:
                 await event.edit(
-                    f"wah, mau ngobrol...\nHarap tunggu dan lihat apakah {ALIVE_NAME} sedang dalam mood untuk mengobrol, jika ya, dia akan segera membalas!\nSampai saat itu, **jangan spam.**"
+                    f"OH, MAU NGOBROL YA...\nHarap tunggu dan lihat apakah {ALIVE_NAME} sedang dalam mood untuk mengobrol, jika ya, dia akan segera membalas!\nSampai saat itu, **jangan spam.**"
                 )
                 target = await event.client(GetFullUserRequest(event.query.user_id))
                 ok = event.query.user_id
@@ -981,7 +981,7 @@ Voice chat group menu untuk {owner}
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
             else:
                 await event.edit(
-                    f"Oh, jadi Anda di sini untuk spam 😤\nGoodbye.\nPesan Anda telah dibaca dan berhasil diabaikan."
+                    f"Oh, jadi Anda di sini untuk Iseng 😤\nGoodbye.\nPesan Anda telah dibaca dan berhasil diabaikan."
                 )
                 await bot(functions.contacts.BlockRequest(event.query.user_id))
                 target = await event.client(GetFullUserRequest(event.query.user_id))
