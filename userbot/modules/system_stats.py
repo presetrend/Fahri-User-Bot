@@ -169,9 +169,9 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⚜-**⚡Sƙყȥυ-υʂҽɾႦσƚ⚡ Versi:** \n "
+            "**✎-**⚡𝗙𝗮𝗵𝗿𝗶 𝘂𝘀𝗲𝗿𝗯𝗼𝘁⚡ Versi:** \n "
             f"heads/Skyzu-Userbot-0-x634i7u1"
-            "\n**⚜-**Revisi:**\n "
+            "\n**✎-**Revisi:**\n "
             f"{revout}"
         )
     else:
@@ -233,17 +233,17 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"ㄒㄖ几丨匚 卂ㄥ丨ᐯ乇\n\n"
-        f"\n__**{TONIC_TEKS_KUSTOM}**__\n\n\n"
+        f"Fahri ALIVE\n\n"
+        f"\n__**{FAHRI_TEKS_KUSTOM}**__\n\n\n"
         f"╭✠╼━━━━━━━━━━━━━━━✠╮\n"
-        f"➥ **Name** : `{DEFAULTUSER}` \n"
+        f"➥ **Nama** : `{DEFAULTUSER}` \n"
         f"➥ **Username** : @{user.username} \n"
         f"➥ **Telethon** : `{version.__version__}` \n"
         f"➥ **Python**   : `{python_version()}` \n"
         f"➥ **Bot Ver**  : `{BOT_VER}` \n"
         f"➥ **Modules**  : `{len(modules)}` \n"
         f"╰✠╼━━━━━━━━━━━━━━━✠╯\n"
-        f"[ɢʀᴏᴜᴘꜱ](https://t.me/GroupVirtualMusic) | [ʙᴏᴛᴏꜰ](https://t.me/{user.username}) | [ɢɪᴛʜᴜʙ](https://github.com/Tonic990/Tonic-User)"
+        f"[Channel](https://t.me/presetrend) | [Bot](https://t.me/{user.username}) | [YOUTUBE](https://youtube.com/c/Presetrend)"
     )
     if ALIVE_LOGO:
         try:
@@ -270,14 +270,14 @@ async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"●▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬● \n"
-        f"✾ 🤴 • `ᴏᴡɴᴇʀ :`[『TØNIC』 乂 ₭ILLΣR](t.me/Bukan_guudlooking)             ㅤ \n"
-        f"✾ 🖥️ • `ꜱʏꜱᴛᴇᴍ. :`Ubuntu 20.10            \n"
+        f"●▬▬▬▬▬▬FAHRI▬▬▬▬▬▬● \n"
+        f"✾ 🤴 • `PEMILIK :`[『FAHRI』](t.me/arfahri)             ㅤ \n"
+        f"✾ 🖥️ • `SISTEM. :`Ubuntu 20.10            \n"
         f"✾ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ :`v.{version.__version__}                ㅤㅤ  \n"
         f"✾ 🐍 • `ᴘʏᴛʜᴏɴ. :`v.{python_version()} ㅤㅤ\n"
         f"✾ 👾 • `ʙᴏᴛ :`v.{BOT_VER}                ㅤㅤㅤ \n"
         f"✾ 📂 • `ᴍᴏᴅᴜʟᴇ :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   \n"
-        f"●▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬●"
+        f"●▬▬▬▬▬▬USERBOT▬▬▬▬▬▬●"
     )
     if ALIVE_LOGO:
         try:
@@ -314,17 +314,17 @@ async def redis(alive):
     await asyncio.sleep(2)
     output = (
         f"╭✠╼━━━━━━━━━━━━━━━━━━━✠╮\n"
-        f"┃✧ **Name     :** {DEFAULTUSER} \n"
+        f"┃✧ **Nama     :** {DEFAULTUSER} \n"
         f"┃✧ **Username :** @{user.username} \n"
         f"┃✧ **Telethon :** Ver {version.__version__} \n"
         f"┃✧ **Python   :** Ver {python_version()} \n"
         f"┃✧ **Branch   :** {UPSTREAM_REPO_BRANCH} \n"
         f"┃✧ **Bot Ver  :** {BOT_VER} \n"
         f"┃✧ **Modules  :** {len(modules)} Modules \n"
-        f"┃✧ **GitHub   :** [Repo](https://github.com/Tonic990/Tonic-Userbot) \n"
-        f"┃✧ **Groups   :** [groups](https://t.me/PrimeSupportGroup) \n"
-        f"┃✧ **Owner    :** [『TØNIC』 乂 ₭ILLΣR](https://t.me/Bukan_guudlooking) \n"
-        f"┃✧ **channel  :** [channel](https://t.me/PrimeSupportChannel) \n"
+        f"┃✧ **Youtube  :** [Youtube](https://youtube.com/c/Presetrend) \n"
+        f"┃✧ **Channel2  :** [chmusik](https://t.me/Playlistrend) \n"
+        f"┃✧ **Owner    :** [『Fahri』](https://t.me/arfahri) \n"
+        f"┃✧ **channel  :** [channel](https://t.me/Presetrend) \n"
         f"╰✠╼━━━━━━━━━━━━━━━━━━━✠╯"
     )
     if ALIVE_LOGO:
