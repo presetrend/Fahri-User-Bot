@@ -1,6 +1,6 @@
 {
-  "name": "✨ ᴛᴏɴɪᴄ-ᴜsᴇʀʙᴏᴛ ✨",
-  "description": "🚫Tonic-Userbot🚫 USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "name": "✨ Fahri-UserBot ✨",
+  "description": "Fahri-UserBot USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "https://telegra.ph/file/33193e0075fc37c000379.jpg",
   "keywords": [
     "telegram",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
 ],
-  "repository": "https://github.com/Tonic990/Tonic-User",
-  "telegram": "https://t.me/Bukan_guudlooking",
-  "success_url": "https://t.me/PrimeSupportGroup",
+  "repository": "https://github.com/presetrend/Fahri-User-Bot",
+  "telegram": "https://t.me/presetrend",
+  "success_url": "https://github.com/presetrend/Fahri-User-Bot",
   "stack": "container",
   "env": {
     "API_KEY": {
