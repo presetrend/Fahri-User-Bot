@@ -13,15 +13,10 @@
   <img src="https://telegra.ph/file/33193e0075fc37c000379.jpg">
 </p>
 
-## <p align="center">DEPLOY TO HEROKU</p>
-
-<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=VG9uaTg4MC9Ub25pYy1Vc2VyYm90IFRvbmljLVVzZXJib3Q">
-  <img src="https://img.shields.io/badge/Deploy%20Via%20Bot%20Heroku-aqua?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
-
 ## <p align="center">DEPLOY TO WEB HEROKU</p>
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Toni880/Toni-Userbot">
-  <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-aqua?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/presetrend/Fahri-User-Bot">
+  <img src="https://www.herokucdn.com/deploy/button.svg" width="325" height="50.100" /></a></p>
 
 
 
